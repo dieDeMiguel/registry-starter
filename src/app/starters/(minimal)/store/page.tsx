@@ -12,7 +12,7 @@ export default async function Store() {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h1 className="font-bold text-3xl tracking-tighter sm:text-4xl md:text-5xl">
+                <h1 className="font-semibold text-3xl tracking-tighter sm:text-4xl md:text-5xl">
                   Welcome to Store
                 </h1>
 
