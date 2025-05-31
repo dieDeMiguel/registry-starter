@@ -1,12 +1,13 @@
+import { Logo } from "@/components/logo";
 import { Squirrel } from "lucide-react";
 
 export function RegistryLogo() {
   return (
     <>
-      <div className="flex-shrink-0 rounded-md bg-primary p-1">
-        <Squirrel className="size-5 text-secondary" />
+      <div className="flex-shrink-0 rounded-md p-1">
+        <Logo />
       </div>
-      <span className="font-semibold">Registry</span>
+      <span className="font-semibold">SAP Registry</span>
     </>
   );
 }
