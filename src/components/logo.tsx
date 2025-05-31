@@ -2,21 +2,48 @@ export function Logo() {
   return (
     <div className="flex items-center gap-2">
       <svg
+        width="54"
+        height="27"
+        viewBox="0 0 54 27"
+        fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="size-8"
-        role="graphics-symbol"
+        className="inline-block"
       >
-        <circle className="fill-primary" cx="13.5" cy="6.5" r="2.5" />
-        <circle className="fill-primary" cx="19" cy="13" r="2.5" />
-        <circle className="fill-primary" cx="13.5" cy="19.5" r="2.5" />
-        <circle className="fill-primary" cx="6.5" cy="13" r="2.5" />
+        <g clipPath="url(#clip0_301939_308)">
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M0 26.7132H27.2907L54 0H0V26.7132Z"
+            fill="url(#paint0_linear_301939_308)"
+          />
+          <path
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M32.0467 5.02311H26.7302V17.6621L22.0868 5.01918H17.4827L13.519 15.5892C13.0947 12.9245 10.3448 12.0039 8.17108 11.3138C6.73851 10.8542 5.21822 10.1772 5.23786 9.42817C5.24964 8.81534 6.05366 8.24965 7.64467 8.33083C8.71451 8.38714 9.65733 8.47357 11.5351 9.37841L13.3815 6.16366C11.6621 5.29286 9.29722 4.74157 7.35527 4.73895H7.34349C5.08072 4.73895 3.19508 5.47226 2.02703 6.6809C1.2182 7.51122 0.762479 8.62259 0.755538 9.78173C0.72542 11.412 1.32385 12.5709 2.58094 13.4875C3.64161 14.2654 4.99823 14.7695 6.19508 15.1401C7.67086 15.5971 8.87557 15.9952 8.86117 16.8424C8.85285 17.1547 8.72815 17.4527 8.51154 17.6778C8.14358 18.0576 7.57789 18.2016 6.79744 18.2147C5.29286 18.2462 4.1785 18.0104 2.39631 16.9589L0.755538 20.2208C2.59236 21.2634 4.66705 21.8146 6.77911 21.821H7.05541C8.92009 21.7883 10.426 21.2566 11.6281 20.2876C11.6975 20.2339 11.759 20.1776 11.8232 20.12L11.2837 21.5408H16.1065L16.917 19.0764C17.8325 19.3801 18.7915 19.5318 19.756 19.5255C20.6962 19.5301 21.6313 19.3865 22.5268 19.0999L23.3125 21.5408H31.1877V16.4338H32.9044C37.0567 16.4338 39.512 14.319 39.512 10.7769C39.512 6.83411 37.1261 5.02311 32.0467 5.02311ZM19.7612 15.8446C19.1804 15.8481 18.6038 15.747 18.0589 15.546L19.7442 10.2309H19.773L21.4295 15.5617C20.8933 15.7493 20.3293 15.845 19.7612 15.8446ZM32.3583 12.7896H31.1877V8.49976H32.3583C33.9205 8.49976 35.1658 9.02355 35.1658 10.6132C35.1658 12.2632 33.9205 12.783 32.3583 12.783"
+            fill="white"
+          />
+        </g>
+        <defs>
+          <linearGradient
+            id="paint0_linear_301939_308"
+            x1="27"
+            y1="0"
+            x2="27"
+            y2="26.7132"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop stopColor="#00B8F1" />
+            <stop offset="0.02" stopColor="#01B6F0" />
+            <stop offset="0.31" stopColor="#0D90D9" />
+            <stop offset="0.58" stopColor="#1775C8" />
+            <stop offset="0.82" stopColor="#1C65BF" />
+            <stop offset="1" stopColor="#1E5FBB" />
+          </linearGradient>
+          <clipPath id="clip0_301939_308">
+            <rect width="54" height="26.7132" fill="white" />
+          </clipPath>
+        </defs>
       </svg>
-
-      <h1 className="font-bold">Brand Name</h1>
     </div>
   );
 }
