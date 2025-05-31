@@ -1,53 +1,38 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono, Montserrat } from "next/font/google";
-import type { ReactNode } from "react";
-
-import { cn } from "@/lib/utils";
+import type { Metadata } from "next"
+import type { ReactNode } from "react"
+import { cn } from "@/lib/utils"
+import { fontSans, fontSAP72, fontSAP72Mono } from "@/lib/fonts"
 
 import "@/app/tokens.css";
 import "@/app/tailwind.css";
 
+
 export const metadata: Metadata = {
-  title: "Registry Starter",
-  description: "Starter to help build a Shadcn Registry using Tailwind v4",
-  icons: [{ rel: "icon", url: "/favicon.svg", type: "image/svg+xml" }],
-};
-
-const GeistSans = Geist({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
-
-const GeistMono = Geist_Mono({
-  subsets: ["latin"],
-  variable: "--font-mono",
-});
-
-const MontserratSerif = Montserrat({
-  subsets: ["latin"],
-  variable: "--font-serif",
-});
+  title: "SAP Registry",
+  description:
+    "SAP Registry, a design system for SAP",
+  robots: {
+    index: false,
+    follow: false,
+  },
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: ReactNode;
+  children: ReactNode
 }>) {
   return (
     <html
       lang="en"
       className={cn(
-        GeistSans.variable,
-        GeistMono.variable,
-        MontserratSerif.variable,
-        "bg-background text-foreground",
+        fontSans.variable,
+        fontSAP72.variable,
+        fontSAP72Mono.variable,
+        "bg-background text-foreground"
       )}
     >
-      <meta
-        name="robots"
-        content="noindex, nofollow, noarchive, nosnippet, noimageindex"
-      />
-      <body className="flex grow">{children}</body>
+      <body>{children}</body>
     </html>
-  );
+  )
 }
